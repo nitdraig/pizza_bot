@@ -51,7 +51,7 @@ def generate_response(user_input, menu):
 # Función para recomendar una bebida usando OpenAI
 def recommend_beverage(user_input):
     response = openai.Completion.create(
-        engine="text-davinci-003",
+        engine="gpt-3.5-turbo-instruct",
         prompt=f"Recomienda una bebida para acompañar el siguiente artículo del menú en no más de 60 tokens: {user_input}",
         max_tokens=60,
     )
