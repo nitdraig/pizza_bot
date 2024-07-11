@@ -10,6 +10,7 @@ from google.colab import userdata
 OPEN_KEY = userdata.get("OPENAI_API_KEY")
 
 # Importar dependencias
+%%writefile app.py
 import pandas as pd
 import openai
 import streamlit as st
